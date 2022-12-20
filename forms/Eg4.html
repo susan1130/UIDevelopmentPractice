@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>select, option, optgroup, label, selected, disabled, value, size</title>
+    </head>
+
+    <body>
+        <form method="post" action="register.html">
+
+            <label for="city">Cities</label>
+            <select name="cT" id="city" size="2"> <!-- select tag with size 2-->>
+              <optgroup label="East">
+                <option value="">City 1</option>
+                <option value="">City 2</option>
+                <option value="">City 3</option>
+                <option value="">City 4</option>
+              </optgroup>
+              <optgroup label="West" disabled>      <!--optgroup is disabled, so it'll be greyed out-->>
+                <option value="" label="C5">City 5</option>  <!--C5 appears in place of City 5-->>
+                <option value="">City 6</option>
+                <option value="">City 7</option>
+                <option value="">City 8</option>
+                <option value="" selected>City 9</option> <!--selected tag means that this is the default selected option-->>
+
+            </optgroup>
+            </select>
+
+        </form>
+    </body>
+</html>
