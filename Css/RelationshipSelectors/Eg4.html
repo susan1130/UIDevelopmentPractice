@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selectors</title>
+    <style>
+        div ~ p{    /*every similar element after div has this style*/
+            background-color: azure;
+            border: 1px solid cyan ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+
+    </div>
+
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+        
+       <h3>Testing</h3>   <!--Elements in between does not affect it-->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority of tags</title>
+    <style>
+        p{
+            border: 2px solid goldenrod;
+        }
+
+        #p1{
+            border: 1px dashed green;
+        }
+
+        .c1{
+            border: 3px solid slateblue;
+        }
+
+    </style>
+</head>
+<body>
+    <p style="border: 2px dotted violet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum possimus natus molestias illo eum ipsa impedit totam! Voluptate nobis tenetur ea quaerat, necessitatibus inventore dolorem repudiandae at dolore quos.</p>
+
+    <p id="p1" class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum possimus natus molestias illo eum ipsa impedit totam! Voluptate nobis tenetur ea quaerat, necessitatibus inventore dolorem repudiandae at dolore quos.</p>
+
+    <p class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum possimus natus molestias illo eum ipsa impedit totam! Voluptate nobis tenetur ea quaerat, necessitatibus inventore dolorem repudiandae at dolore quos.</p>
+
+
+</body>
+</html>
+
+<!-- Inline has the highest priority
+id then class in the priority ratings -->

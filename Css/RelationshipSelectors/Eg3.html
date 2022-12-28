@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selectors</title>
+    <style>
+        div + p{  /*only the direct next similar element after div gets the styling effects*/
+            background-color: blanchedalmond;
+            border: 1px solid chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+    </div>
+    <!-- <h4>Nothing to see here</h4>  the presence of any other element breaks the spell-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officiis illo quos voluptas nesciunt deserunt dolorum, blanditiis adipisci. Eum, corporis similique nisi eveniet corrupti rem distinctio accusantium totam? Tempore, quae!</p>
+    
+</body>
+</html>

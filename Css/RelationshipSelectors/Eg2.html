@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Child Selector</title>
+    <style>
+        ol>li {  /*this makes the direct descendents of the ol violet*/
+            border: 2px solid violet;
+        }
+        li {    /*this makes all the li tags peru, but not the ol's*/
+            border: 1px solid peru;
+        }
+        
+    </style>
+</head>
+<body>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ol>
+    <ul>
+        <li>Alpha</li>
+        <li>Bravo</li>
+        <li>Charlie</li>
+        <li>Delta</li>
+    </ul>
+</body>
+</html>
