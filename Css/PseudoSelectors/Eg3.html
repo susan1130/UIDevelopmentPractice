@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstChild and Last Child</title>
+
+    <!-- li:first-child,li:last-child makes the first and the last elements pink -->
+
+    <style>
+        div{
+            border:  2px solid darkseagreen;
+            background-color:honeydew;
+        }
+        ol:first-child,li:last-child{
+            color: dodgerblue;
+        }
+        li:first-child,li:last-child{
+            color: fuchsia;
+        }
+        ol,li{
+            color:orange
+        }
+        ul,li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ol>
+        <ol>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ol>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+            <li>Item Four</li>
+            <li>Item Five</li>
+        </ul>
+    </div>
+</body>
+</html>

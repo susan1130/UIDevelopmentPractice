@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables and their pseudo-tags</title>
+
+    <!-- -->
+
+    <style>
+        div{
+            border:  2px solid darkseagreen;
+            background-color:honeydew;
+        }
+        table{
+            width: 100%;
+            color:brown;
+            text-align: center;
+        }
+        table, th,td{
+            border: 1px inset red;
+            border-collapse: collapse;
+            font-size: large;
+        }
+        table tr:first-child{
+            color: blue;
+            text-align: center;
+        }
+        table tr:hover{
+            color: fuchsia;
+            background-color: aquamarine;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Ranking</th>
+                <th>Item Name</th>
+                <th>Brand Name</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>iPhone 14</td>
+                <td>Apple</td>
+                <td>Rs.50,000</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Samsung Galaxy Note 8</td>
+                <td>Samsung</td>
+                <td>Rs. 40,000</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>N Plus 10</td>
+                <td>N Plus</td>
+                <td>Rs. 38,000</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
