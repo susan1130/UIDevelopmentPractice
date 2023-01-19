@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionAbsolute</title>
+    <style>
+        div{
+            border: 2px solid blue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        section div:first-child{
+            position: absolute;
+            top: 250px;
+            right: 250px;
+            bottom: 150px;
+            left: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div style="background-color: aquamarine;">one </div>
+        <div style="background-color: burlywood">two</div>
+        <div style="background-color: cornflowerblue;">three</div>
+        <div style="background-color: cornsilk;">four</div>
+    </section>
+</body>
+</html>

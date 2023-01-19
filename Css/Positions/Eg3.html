@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute&Relative</title>
+    /*My version*/
+    <style>
+        h3{
+            border: 2px solid cornflowerblue;
+            padding: 10px;
+            background-color: skyblue;
+            position: absolute;
+            top: 250px;
+        }
+
+        section {
+            border: 2px solid crimson;
+            padding: 10px;
+            background-color: darkorange;
+            /* position: absolute;
+            top: 50px; */
+            z-index: 1;
+        }
+
+        div{
+            border: 2px solid crimson;
+            padding: 10px;
+            background-color: blanchedalmond;
+            /* position: relative;
+            top: 100px; */
+        }
+
+        div:first-child{
+            position: relative;
+            top: 100px;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Parent Viewport</h3>
+
+    <section class="c1">
+        <div>Not a parent viewport attachment</div>
+    </section>
+
+    <section>
+        <div>Not a parent viewport attachment</div>
+    </section>
+</body>
+</html>
