@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ&fig</title>
+    <style>
+        figure img{
+            width: 100%;
+        }
+        .container{
+            display: flex;
+        }
+        .container figure{
+            flex: 1;
+            
+            border: 1px solid blueviolet;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width:600px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <figure>
+            <img src="./../DisplayGrid/howls moving castle.jpg" alt="01">
+            <figcaption>Howl's moving castle</figcaption>
+        </figure>
+    
+        <figure>
+            <img src="./../DisplayGrid/Spirited_Away_Japanese_poster.png" alt="02">
+            <figcaption>Spirited Away</figcaption>
+        </figure>
+    
+        <figure>
+            <img src="./../DisplayGrid/My_Neighbor_Totoro_-_Tonari_no_Totoro_(Movie_Poster).jpg" alt="03">
+            <figcaption>My Neighbour Totoro</figcaption>
+        </figure>
+        <figure>
+            <img src="./../DisplayGrid/Ponyo_(2008).png" alt="04">
+            <figcaption>Ponyo</figcaption>
+        </figure>
+    </section>
+</body>
+</html>
