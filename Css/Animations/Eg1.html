@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        div{
+            border: 2px solid blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+        div:first-child{
+            /* transform: translate(100px);              x-axis displacement     */
+            /* transform: translate(30px,300px);        (x-axis, y-axis)         */
+                transform: translate(0px,300px);        /*y- axis displacemnet   */
+        }
+
+        div:nth-child(2):hover{
+            transform: scale(1.01, 2);
+            /*for zooming in       (width,height)  */
+        }
+
+        div:nth-child(3):hover{
+            border-width: 4px;
+            transform: skew(5deg, 8deg);
+            /* move along the x and y axis in degrees*/
+        }
+
+        div:nth-child(4):hover{
+            transform: rotate(120deg);
+            /*rotates ...positive angle for clockwise direction. Negative angle for anti-clockwise direction*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>Division One</div>
+    <div>Division Two</div>
+    <div>Division Three</div>
+    <div>Division Four</div>
+</body>
+</html>
