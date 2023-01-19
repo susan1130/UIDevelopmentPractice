@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>LAyout using flex, the bare bones</title>
+    
+    <style>
+        section,div {
+            border: 1px solid blueviolet;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+        }
+        section div{
+            flex: 1;
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div>ROW 1, COL 1</div>
+        <div>ROW 1, COL 2</div>
+        <div>ROW 1, COL 3</div>
+        <div>ROW 1, COL 4</div>
+        <div>ROW 1, COL 5</div>
+    </section>
+
+    <section>
+        <div>ROW 2, COL 1</div>
+        <div>ROW 2, COL 2</div>
+        <div>ROW 2, COL 3</div>
+        <div>ROW 2, COL 4</div>
+    </section>
+
+    <section>
+        <div>ROW 3, COL 1</div>
+        <div>ROW 3, COL 2</div>
+        <div>ROW 3, COL 3</div>
+    </section>
+
+</body>
+</html>

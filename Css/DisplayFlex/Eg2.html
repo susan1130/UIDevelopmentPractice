@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>LAyout using flex, the bare bones</title>
+    
+    <style>
+        body{
+            background-color: black;
+        }
+        section,div {
+            /* border: 1px solid slateblue; */
+            background-color: black;
+            color: aquamarine;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+        }
+        section div{
+            flex: 2;
+            margin: 15px;
+            padding: 130px;
+        }
+        .container > div {
+            height: 20px;
+            padding: 10px;
+        }
+        .container > div:first-child{
+            flex:3;
+        }
+        /* .logo-container {
+            height: 30px;
+            width: 30px;
+        } */
+
+        img{
+            width: 250px;
+            padding: 10px;
+        }
+        .imageContainer {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        [id ^="di"]{
+            width: 240px;
+            height: 30px;
+        }
+        #footr{
+            background-color: black;
+            color: white;
+            font-size: x-large;
+            text-align: center;          
+        }
+        p{
+            color: beige;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="container">
+        <img src="/layout/logo1.png" alt="logo" style="height: 43px; width: 56px;padding: 15px;">
+        <div>
+            <select name="dd1" id="di1">
+                <optgroup label="DropDown1">
+                    <option value="DropDown01">Option 1</option>
+                    <option value="DropDown02">Option 2</option>
+                    <option value="DropDown03">Option 3</option>
+                    <option value="DropDown04">Option 4</option>
+                    <option value="DropDown05">Option 5</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <select name="dd2" id="di2">
+                <optgroup label="DropDown2">
+                    <option value="DropDown01">Option 1</option>
+                    <option value="DropDown02">Option 2</option>
+                    <option value="DropDown03">Option 3</option>
+                    <option value="DropDown04">Option 4</option>
+                    <option value="DropDown05">Option 5</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <select name="dd3" id="di3">
+                <optgroup label="DropDown3">
+                    <option value="DropDown01">Option 1</option>
+                    <option value="DropDown02">Option 2</option>
+                    <option value="DropDown03">Option 3</option>
+                    <option value="DropDown04">Option 4</option>
+                    <option value="DropDown05">Option 5</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <select name="dd4" id="di4">
+                <optgroup label="DropDown4">
+                    <option value="DropDown01">Option 1</option>
+                    <option value="DropDown02">Option 2</option>
+                    <option value="DropDown03">Option 3</option>
+                    <option value="DropDown04">Option 4</option>
+                    <option value="DropDown05">Option 5</option>
+                </optgroup>
+            </select>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <img src="./../../layout/iPhone11.png" alt="iPhone11">
+       
+            <img src="./../../layout/iPhonePro11.png" alt="iPhonePro11">
+        
+            <img src="/layout/iPhone11ProMax.png" alt="iPhone11ProMax">
+        </div>
+    </section>
+
+    <section class="imageContainer">
+        <div><img src="/layout/iPhone11.png" alt="img1">
+        </div><div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quis explicabo ipsam reprehenderit nulla exercitationem earum velit iste. Eaque quia repellat sed quibusdam praesentium ut perspiciatis, facere id quidem aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illum obcaecati assumenda ex illo aperiam tempore harum quia nemo eius, repellendus ut. Saepe id, sequi nesciunt similique rem nam esse?</p>
+        </div>
+        <div><img src="/layout/iPhonePro11.png" alt="img2">
+        </div><div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quis explicabo ipsam reprehenderit nulla exercitationem earum velit iste. Eaque quia repellat sed quibusdam praesentium ut perspiciatis, facere id quidem aperiam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illum obcaecati assumenda ex illo aperiam tempore harum quia nemo eius, repellendus ut. Saepe id, sequi nesciunt similique rem nam esse?</p>
+        </div>
+        <div><img src="/layout/iPhone11ProMax.png" alt="img3">
+        </div><div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quis explicabo ipsam reprehenderit nulla exercitationem earum velit iste. Eaque quia repellat sed quibusdam praesentium ut perspiciatis, facere id quidem aperiam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illum obcaecati assumenda ex illo aperiam tempore harum quia nemo eius, repellendus ut. Saepe id, sequi nesciunt similique rem nam esse?</p>
+        </div>
+    </section>
+<footer>
+    <p id="footr">&copy Apple 2023</p>
+</footer>
+</body>
+</html>
