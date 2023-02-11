@@ -1,0 +1,4 @@
+*Targeting the DOM
+ID    =>>>  document.getElementById()
+CLASS =>>>  document.getElementByClassName()
+TAG   =>>>  document.getElementByTagName()
