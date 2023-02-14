@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stringMethods</title>
+</head>
+<body>
+    <script>
+        //literal
+        userName = "Jhonny Quest"
+        console.log(userName)
+        console.log(typeof(userName))
+
+        //constructor
+        uName = String("Jhonny Quest")
+        console.log(uName)
+        console.log(typeof(uName))
+
+        //length
+        console.log(userName.length)
+        console.log(uName.length)
+        console.log(" ")
+
+        //index position
+        console.log(uName[0])
+        console.log(uName[1])
+        console.log(uName[2])
+        console.log(uName[3])
+        console.log(uName[4])
+        console.log(uName[5])
+        console.log(uName[6])
+        console.log(uName[7])
+        console.log(uName[8])
+        console.log(uName[9])
+        console.log(uName[10])
+        console.log(uName[11])
+        
+        
+
+        //for loop
+        for(let i=0; i<12; i++){
+            console.log(uName[i])
+        }
+        
+
+        //for in
+        for(let j in uName){
+            console.log(j, uName[j])
+        }
+        
+
+        //forEach
+        [userName].forEach(element =>{
+            console.log(element)
+        });
+
+    </script>
+</body>
+</html>

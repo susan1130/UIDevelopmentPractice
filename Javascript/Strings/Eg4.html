@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charAt, concat, includes, indexOf, lastIndexOf, etc</title>
+</head>
+<body>
+        <script>
+            movie = "Slumberland"
+
+            // charAt(index)
+            console.log(movie.charAt(0))        //S
+            console.log(movie.charAt(7))        //l
+
+            //concat
+            fName = "Jesse"
+            lName = "Banner"
+            console.log(fName +" " +lName)      // Jesse Banner
+            console.log(fName.concat(lName))    //JesseBanner
+            console.log(fName+lName)            //JesseBanner
+
+            //includes
+            console.log(fName.includes("S"))    // false
+            console.log(fName.includes("s"))    // true
+
+            //indexOf and lastIndexOf
+            city = "Hyderabad"
+            console.log(city.indexOf("H"))          // 0
+            console.log(city.indexOf("b"))          // 6
+            console.log(city.lastIndexOf("d"))      // 8
+            console.log(city.indexOf("d", 5))       // 8
+            console.log(city.indexOf("Z"))          // -1
+
+            //replace()
+            console.log(city.replace("Hyderabad","Guwahati"))               // Guwahati
+
+            //replaceAll()
+            sample = "Today is Valentine's Day. The unsavory day of love"
+            console.log(sample.replaceAll("o", "0"))     //T0day is Valentine's Day. The unsav0ry day 0f l0ve
+
+            //toUpperCase() and toLowerCase()
+            console.log(sample.toUpperCase())       //TODAY IS VALENTINE'S DAY. THE UNSAVORY DAY OF LOVE
+            console.log(sample.toLowerCase())       //today is valentine's day. the unsavory day of love
+
+        </script>
+</body>
+</html>
