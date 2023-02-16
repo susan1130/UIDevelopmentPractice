@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week and dates</title>
+</head>
+<body>
+    <script>
+
+        let d = new Date()
+        let l1 = d.getDay()
+
+        function f(l1){
+            if (l1 == 1){
+                return "Monday"
+            }
+            else if(l1 == 2){
+                return "Tuesday"
+            }
+            else if(l1 == 3){
+                return "Wednesday"
+            }
+            else if(l1 == 4){
+                return "Thursday"
+            }
+            else if(l1 == 5){
+                return "Friday"
+            }
+            else if(l1 == 6){
+                return "Saturday"
+            }
+            else if(l1 == 7){
+                return "Sunday"
+            }
+            else{
+                return "Unknown value"
+            }
+        }
+        console.log(f(l1))      //Prints the date
+        console.log(f(0))       //Unknown value
+        console.log(f())        //Unknown value
+    </script>
+</body>
+</html>
