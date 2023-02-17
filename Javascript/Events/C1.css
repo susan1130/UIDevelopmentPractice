@@ -1,0 +1,20 @@
+
+        div{
+            border: 2px solid darkviolet;
+            background-color: plum;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            color: indigo;
+            font-weight: bolder;
+        }
+        button{
+            color: indigo;
+            font-weight: bolder;
+            border: 2px inset blueviolet;
+            border-radius: 10px;
+            background-color: lavender;
+            flex: 1;
+            height: 35px;
+            margin: 10px 5px;
+        }

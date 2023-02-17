@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window and other events</title>
+    <link rel="stylesheet" href="C1.css">
+</head>
+<body>
+    <div>
+        <button onclick="f1()">Open Window</button>
+        <button onclick="f2()">Close Window</button>
+    </div>
+    <script>
+        function f1(){
+            window.open("https://google.com", "","width=500px, height=500px left=100px top=250px" )
+        }
+        function f2(){
+            window.close()
+        }
+    </script>
+</body>
+</html>
